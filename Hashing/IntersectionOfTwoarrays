@@ -1,0 +1,27 @@
+class Solution(object):
+    def create_set(self,nums1):
+        s = set()
+        for i in nums1:
+            s.add(i)
+        return s
+
+    def intersection(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        
+        s = self.create_set(nums1)
+        answer = set()
+        for num in nums2:
+            if num in s:
+                answer.add(num)
+
+        return list(answer)
+            
+            
+            
+            
+    
+        
