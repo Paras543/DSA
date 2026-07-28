@@ -10,7 +10,11 @@ class Solution(object):
         for i in range(len(prices)):
             cost = prices[i] - mini
             profit = max(cost,profit)
-
             mini = min(mini,prices[i])
 
         return profit
+    
+
+
+
+    
