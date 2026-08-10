@@ -8,6 +8,7 @@ class Solution(object):
         for i in range(idx,len(nums)):
             if nums[i] in used:
                 continue
+            
             used.add(nums[i])
             
             nums[idx] , nums[i] = nums[i] , nums[idx]
