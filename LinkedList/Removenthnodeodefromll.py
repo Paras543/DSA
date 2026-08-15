@@ -10,7 +10,7 @@ class Solution(object):
         :type n: int
         :rtype: Optional[ListNode]
         """
-        dummy = ListNode(0)
+        dummy = ListNode(0) # type: ignore
         dummy.next = head
         slow = dummy
         fast = dummy
