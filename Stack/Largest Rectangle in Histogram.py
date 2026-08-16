@@ -10,7 +10,7 @@ class Solution(object):
         left = [0] * len(heights)
 
         for i in range(len(heights)-1,-1,-1):
-            while len(st) > 0 and heights[st[-1]] > heights[i]:
+            while len(st) > 0 and heights[st[-1]] >= heights[i]:
                 st.pop()
             if len(st) == 0:
                 right[i] =  len(heights)
@@ -18,11 +18,13 @@ class Solution(object):
                 right[i] = st[-1]
             st.append(i)
 
+        st = []
+
         for i in range(len(heights)):
-            while len(st) > 0 and heights[st[-1]] > heights[i]:
+            while len(st) > 0 and heights[st[-1]] >= heights[i]:
                 st.pop()
             if len(st) == 0:
-                left[i] =  len(heights)
+                left[i] =  -1
             else:
                 left[i] = st[-1]
             st.append(i)
