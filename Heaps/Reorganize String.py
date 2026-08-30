@@ -33,11 +33,7 @@ class Solution(object):
         return "".join(result)
 
 
-
-
-
-
-
+## Just revise it because in the one go i could not just got the algorithm idea
 
 
        
