@@ -4,6 +4,7 @@ class Solution(object):
         for j in range(len(adj)):
             if adj[i][j] == 1 and not vis[j]:
                 self.dfs(j,adj,vis)
+                
     def findCircleNum(self, isConnected):
         """
         :type isConnected: List[List[int]]
