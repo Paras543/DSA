@@ -47,3 +47,6 @@ class Solution(object):
                 if pacific[i][j] and atlantic[i][j]:
                     result.append([i,j])
         return result
+    
+
+    
